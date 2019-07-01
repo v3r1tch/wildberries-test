@@ -1,0 +1,15 @@
+.grid {
+  &_wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px){
+      padding: 0;
+    }
+  }
+}

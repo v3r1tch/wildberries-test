@@ -1,0 +1,10 @@
+.info-form_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px;
+
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}

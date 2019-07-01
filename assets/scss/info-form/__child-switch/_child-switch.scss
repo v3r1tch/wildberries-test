@@ -1,0 +1,36 @@
+.child-switch {
+
+  &_radio {
+    display: none;
+
+    &:checked {
+      ~ .child-switch_label {
+        &:before {
+          background-color: #ba3197;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  &_label {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px 10px 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #eff2f4;
+      border: 5px solid #eff2f4;
+      margin-right: 20px;
+      transition: 0.3s;
+    }
+  }
+}

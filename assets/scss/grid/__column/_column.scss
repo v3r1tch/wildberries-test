@@ -1,0 +1,8 @@
+.grid_column {
+  display: flex;
+  padding: 0 10px;
+
+  &__half {
+    flex-basis: 50%;
+  }
+}

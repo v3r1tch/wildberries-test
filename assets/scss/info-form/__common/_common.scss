@@ -1,0 +1,7 @@
+.info-form {
+  padding: 40px;
+
+  @media screen and (max-width: 768px){
+    padding: 0;
+  }
+}

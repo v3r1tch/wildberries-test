@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тест</title>
+    <script src="dist/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="dist/css/style.css" rel="stylesheet">
+</head>
+<body>
+<main class="info-form-main">
+    <section class="info-form">
+        <div class="info-form_wrapper grid_wrapper">
+            <h1 class="info-form_title">Информация о Вас</h1>
+                <form>
+                    <div class="grid_row">
+                        <fieldset>
+                            <div class="sex-switch_fieldset">
+                                <div class="sex-switch">
+                                    <input type="radio" name="sex" id="male" class="sex-switch_radio" checked>
+                                    <label for="male" class="sex-switch_label">Мужчина</label>
+                                    <i class="material-icons sex-switch_check">check</i>
+                                </div>
+
+                                <div class="sex-switch">
+                                    <input type="radio" name="sex" id="female" class="sex-switch_radio">
+                                    <label for="female" class="sex-switch_label">Женщина</label>
+                                    <i class="material-icons sex-switch_check">check</i>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="grid_row">
+                        <fieldset class="grid_column grid_column__half">
+                            <div class="text-field-outline-default">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="name" class="text-field-outline_input" type="text" value="Констанция Константинопольская" required>
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="name" class="text-field-outline_label">ФИО</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-field-outline-default">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="city" class="text-field-outline_input" type="text" required>
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="city" class="text-field-outline_label">Город</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-field-outline-default text-field-outline-default_date">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="b-day" class="text-field-outline_input text-field-outline_input__date" type="text" required>
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="b-day" class="text-field-outline_label">Дата рождения</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                        <i class="material-icons text-field-outline_icon__date"> date_range</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="grid_column grid_column__half">
+                            <div class="text-field-outline-default">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="email" class="text-field-outline_input" type="text" value="test@mail.ru" required autocomplete="off">
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="email" class="text-field-outline_label">Email</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-field-outline-default">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="phone" class="text-field-outline_input" type="text" required>
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="phone" class="text-field-outline_label">Телефон</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-field-outline-default">
+                                <div class="text-field-outline_wrapper">
+                                    <input id="marital-status" class="text-field-outline_input" type="text" required>
+                                    <div class="text-field-outline">
+                                        <div class="text-field-outline_leading"></div>
+                                        <div class="text-field-outline_notch">
+                                            <label for="marital-status" class="text-field-outline_label">Семейное положение</label>
+                                        </div>
+                                        <div class="text-field-outline_trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <fieldset class="child-switch-fieldset">
+                        <legend class="child-switch-legend">Дети</legend>
+                        <div class="grid_row grid_row__mobile">
+                            <div class="child-switch">
+                                <input type="radio" name="child" id="child-no" class="child-switch_radio" checked>
+                                <label for="child-no" class="child-switch_label">нет</label>
+                            </div>
+
+                            <div class="child-switch">
+                                <input type="radio" name="child" id="child-yes" class="child-switch_radio">
+                                <label for="child-yes" class="child-switch_label">есть</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="grid_row">
+                        <button class="btn info-form_btn" type="button" value="Сохранить" onclick="loadJson()"> Сохранить </button>
+                    </div>
+                </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

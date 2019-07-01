@@ -1,0 +1,13 @@
+.grid_row {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__mobile{
+    @media screen and (max-width: 768px){
+      flex-direction: row;
+    }
+  }
+}
